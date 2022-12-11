@@ -10,18 +10,17 @@ namespace ProjTest1
     {
         static void Main(string[] args)
         {
-            int a;
-            int b = 1;
-            for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine("b " + b);
-                a = b * (b =  b + 1); 
-                
-                Console.WriteLine("a " + a);
-                
-            }
 
-            Console.ReadLine();a
+            Console.ReadLine();
         }
+
+        interface ITest
+        {
+            void GetCos();
+
+
+        }
+
+
     }
 }
