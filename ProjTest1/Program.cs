@@ -21,7 +21,7 @@ namespace ProjTest1
                 
             }
 
-            Console.ReadLine();
+            Console.ReadLine();a
         }
     }
 }

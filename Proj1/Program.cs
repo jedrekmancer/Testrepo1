@@ -33,7 +33,7 @@ namespace Proj1
                 silnia = b * (b = b - 1);
                 Console.WriteLine(b);
                 Console.WriteLine(silnia);
-                return RecurSilnia(b);
+                return RecurSilnia(b);a
             
             }
             
