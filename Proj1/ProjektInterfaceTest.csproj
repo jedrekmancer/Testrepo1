@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C565142D-DD2D-4D95-930C-25FB1B0C0040}</ProjectGuid>
+    <ProjectGuid>{E0C083A6-1A24-42F2-BA9C-F28E3B053508}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Proj1</RootNamespace>
     <AssemblyName>Proj1</AssemblyName>
@@ -43,14 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterfaceTest\ITest.cs" />
+    <Compile Include="InterfaceTest\KlasaTest1.cs" />
+    <Compile Include="InterfaceTest\Obiekty1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Silnia.Utils\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

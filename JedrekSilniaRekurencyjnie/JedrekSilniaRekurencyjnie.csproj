@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D9A2CA3E-132A-4705-8290-20524054B764}</ProjectGuid>
+    <ProjectGuid>{19907AE2-5368-411A-B443-0C0689D8DC70}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ProjTest1</RootNamespace>
-    <AssemblyName>ProjTest1</AssemblyName>
+    <RootNamespace>JedrekSilniaRekurencyjnie</RootNamespace>
+    <AssemblyName>JedrekSilniaRekurencyjnie</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SilniaUtils\SilniaClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

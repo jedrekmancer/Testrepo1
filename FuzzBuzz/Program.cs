@@ -35,12 +35,12 @@ namespace FuzzBuzz
                 }
                 else
                 {
-                 if (r5 == 0)
+                    if (r5 == 0)
                     {
                         Console.Write(i);
                         Console.WriteLine(" Buzz");
                     }
-                    
+
                 }
 
             }

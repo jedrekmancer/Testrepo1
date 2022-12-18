@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Proj1.InterfaceTest;
+using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,42 +11,42 @@ namespace Proj1
     {
         static void Main(string[] args)
         {
-            int a;
-            Console.Write("Podaj silnię: ");
-            a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(a);
-            Console.Write(RecurSilnia(a, a));
+            KlasaTest1 x = new KlasaTest1();
+            KlasaTest1 y = new KlasaTest1();
 
-            Console.ReadLine();
+            Obiekty1 x1 = new Obiekty1("xxaaa", 1);
+            x.AddObject(x1);
+            Obiekty1 x2 = new Obiekty1("xxbbb", 2);
+            x.AddObject(x2);
+            Obiekty1 y1 = new Obiekty1("yyaaa", 11);
+            y.AddObject(y1);
+            Obiekty1 y2 = new Obiekty1("yybbb", 22);
+            y.AddObject(y2);
+            Obiekty1 y3 = new Obiekty1("yyccc", 33);
+            y.AddObject(y2);
+            WywalNazwyObiektow(x);
+            WywalNazwyObiektow(y);
+            WywalNazwyObiektow(x);
+            
+
+            //Console.WriteLine(x.IleWKlasie());
+            //Console.WriteLine(y.IleWKlasie());
+            //Console.WriteLine(x1.GetTitle());
+            //Console.WriteLine(x2.GetTitle());
+            //Console.WriteLine(y1.GetTitle());
+            //Console.WriteLine(y2.GetTitle());
+
+
+            Console.ReadKey();
         }
 
-        public static int RecurSilnia(int silnia, int licznik)
+        private static void WywalNazwyObiektow(KlasaTest1 x)
         {
-            if (silnia  == 0 || silnia == 1)
+            foreach (string a in x.nazwyObiektow())
+
             {
-                return 1;
+                Console.WriteLine(a);
             }
-            else
-            {
-                silnia = silnia * (licznik -1);
-                licznik--;
-                {
-                    if (licznik == 0)
-                    {
-                        return silnia;
-                    }
-                    else
-                    {
-                        RecurSilnia(silnia, licznik);
-                    }
-                }
-            
-            }
-            
         }
-
     }
-    
-   
-
 }

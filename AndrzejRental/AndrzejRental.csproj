@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{535431C5-5D38-4150-827B-3204E406032A}</ProjectGuid>
+    <ProjectGuid>{5A15AD06-1BB7-4950-8DA4-F7582AF5BEF1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HappyClerk</RootNamespace>
-    <AssemblyName>HappyClerk</AssemblyName>
+    <RootNamespace>AndrzejRental</RootNamespace>
+    <AssemblyName>AndrzejRental</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,6 +45,13 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RentalUtils\BluRayMovie.cs" />
+    <Compile Include="RentalUtils\DvdMovie.cs" />
+    <Compile Include="RentalUtils\MoviePhisical.cs" />
+    <Compile Include="RentalUtils\IMovie.cs" />
+    <Compile Include="RentalUtils\Rental.cs" />
+    <Compile Include="RentalUtils\StreamingMovie.cs" />
+    <Compile Include="RentalUtils\VhsMovie.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
