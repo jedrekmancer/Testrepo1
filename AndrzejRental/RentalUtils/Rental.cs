@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AndrzejRental.UserUtils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,9 @@ namespace AndrzejRental.RentalUtils
     internal class Rental
     {
         private List<IMovie> _movies = new List<IMovie>();
-
+        // lista filmow poczatkowych dla uzytkownika premium
+        private List<IMovie> _startingCollection = new List<IMovie>();
+        
         public void AddMovie(IMovie movie)
         {
             _movies.Add(movie);
@@ -28,8 +31,51 @@ namespace AndrzejRental.RentalUtils
 
         }
 
+        public List<string> GetAllMovies()
+        {
+            List<string> allMovies = new List<string>();
+            foreach (IMovie movie in _movies)
+            {
+                allMovies.Add(movie.GetTitle());
+            }
+            return allMovies;
+        }
 
+        public bool RemoveMovie(string movieTitle)
+        {
+            for (int i = 0; i < _movies.Count; i++)
+            {
+                if (_movies[i].GetTitle() == movieTitle)
+                {
+                    _movies.RemoveAt(i);
+                    return true;
+                }
+            }
+            return false;
+        }
 
+        // nowe metody
+
+        public void FillStartingCollection(string film1, string film2)
+        {
+            _startingCollection.Add(Find(film1));
+            _startingCollection.Add(Find(film2));
+        }
+
+        public List<string> GetTitlesStartingList()
+        {
+            List<string> listaStartowaTytuly = new List<string>();
+            foreach (IMovie movie in _startingCollection)
+            {
+                listaStartowaTytuly.Add(movie.GetTitle());
+            }
+            return listaStartowaTytuly;
+        }
+
+        public List<IMovie> GetStartingCollection()
+        {
+            return _startingCollection;
+        }
 
 
     }
