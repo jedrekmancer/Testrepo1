@@ -1,11 +1,11 @@
-﻿using Proj1.InterfaceTest;
+﻿using InterfaceTest;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Proj1
+namespace ProjektInterfaceTest
 {
     internal class Program
     {
