@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E0C083A6-1A24-42F2-BA9C-F28E3B053508}</ProjectGuid>
+    <ProjectGuid>{D2C4C309-C975-4DB2-8FD4-6D1280AB749B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Proj1</RootNamespace>
-    <AssemblyName>Proj1</AssemblyName>
+    <RootNamespace>IntListSorter</RootNamespace>
+    <AssemblyName>IntListSorter</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,14 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InterfaceTest\ITest.cs" />
-    <Compile Include="InterfaceTest\KlasaTest1.cs" />
-    <Compile Include="InterfaceTest\Obiekty1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UtilsLibrary\UtilsLibrary.csproj">
+      <Project>{be0f4150-e6b1-4285-9df8-b9ce13640b91}</Project>
+      <Name>UtilsLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

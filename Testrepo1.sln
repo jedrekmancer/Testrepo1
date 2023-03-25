@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndrzejRental", "AndrzejRen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JedrekFibonacciRecursion", "JedrekFibonacciRecursion\JedrekFibonacciRecursion.csproj", "{5EE4F99D-CCFC-4A23-9BEC-13A9AF9E6CA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilsLibrary", "UtilsLibrary\UtilsLibrary.csproj", "{BE0F4150-E6B1-4285-9DF8-B9CE13640B91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntListSorter", "IntListSorter\IntListSorter.csproj", "{D2C4C309-C975-4DB2-8FD4-6D1280AB749B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{5EE4F99D-CCFC-4A23-9BEC-13A9AF9E6CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EE4F99D-CCFC-4A23-9BEC-13A9AF9E6CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EE4F99D-CCFC-4A23-9BEC-13A9AF9E6CA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE0F4150-E6B1-4285-9DF8-B9CE13640B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE0F4150-E6B1-4285-9DF8-B9CE13640B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE0F4150-E6B1-4285-9DF8-B9CE13640B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE0F4150-E6B1-4285-9DF8-B9CE13640B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C4C309-C975-4DB2-8FD4-6D1280AB749B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C4C309-C975-4DB2-8FD4-6D1280AB749B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C4C309-C975-4DB2-8FD4-6D1280AB749B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C4C309-C975-4DB2-8FD4-6D1280AB749B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
